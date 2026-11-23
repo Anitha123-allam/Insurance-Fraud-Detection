@@ -1,116 +1,149 @@
-🛡️ Insurance Claim Fraud Detection System
-📌 Project Overview
-Insurance fraud is a major challenge for insurance companies, leading to significant financial losses every year. This project uses Machine Learning techniques to identify potentially fraudulent insurance claims and assist investigators in prioritizing suspicious cases.
+# 🛡️ Insurance Claim Fraud Detection System Using Machine Learning
 
-The system analyzes claim-related information such as customer details, incident characteristics, claim amount, vehicle information, and policy details to predict whether a claim is likely to be fraudulent.
+## 📌 Project Overview
 
-🎯 Problem Statement
-Insurance companies process thousands of claims every day. Manually reviewing every claim is time-consuming and expensive.
+Insurance fraud is one of the major challenges faced by insurance companies, resulting in significant financial losses. Detecting fraudulent claims manually is time-consuming and requires significant effort.
 
-The objective of this project is to build a Machine Learning model that can:
+This project aims to develop a Machine Learning-based Insurance Claim Fraud Detection System that identifies potentially fraudulent insurance claims based on customer details, policy information, incident characteristics, vehicle details, and claim amounts.
 
-Detect fraudulent claims
-Reduce financial losses
-Improve claim investigation efficiency
-Support decision-making using predictive analytics
-📊 Dataset
-Dataset Source:
+The system uses classification algorithms to predict whether an insurance claim is **Fraudulent or Genuine** and helps insurance companies identify suspicious claims for further investigation.
 
-https://www.kaggle.com/datasets/roshansharma/insurance-claim-fraud-detection
+## 🎯 Problem Statement
 
-Features Included
-Customer Age
-Policy Information
-Incident Type
-Incident Severity
-Vehicle Information
-Claim Amount
-Witness Count
-Police Report Availability
-Property Damage Information
-Target Variable
-Fraud Reported
+Insurance companies receive thousands of claims, making manual fraud detection difficult and expensive.
 
-Y → Fraudulent Claim
-N → Genuine Claim
-⚙️ Technologies Used
-Python
-Pandas
-NumPy
-Matplotlib
-Seaborn
-Scikit-Learn
-Streamlit
-🔄 Project Workflow
-1. Data Collection
-Load insurance claim dataset.
+The objective of this project is to build a predictive model that:
 
-2. Data Preprocessing
-Handle missing values
-Remove duplicates
-Encode categorical variables
-Feature selection
-3. Exploratory Data Analysis (EDA)
-Fraud distribution analysis
-Claim amount analysis
-Incident severity analysis
-Feature correlation analysis
-4. Model Building
-Machine Learning Algorithms:
+- Identifies potentially fraudulent insurance claims.
+- Analyzes claim-related information.
+- Calculates fraud probability.
+- Helps prioritize suspicious claims.
+- Improves claim investigation efficiency.
 
-Logistic Regression
-Random Forest Classifier
-XGBoost Classifier
-5. Model Evaluation
-Evaluation Metrics:
+## 📊 Dataset Information
 
-Accuracy
-Precision
-Recall
-F1 Score
-Confusion Matrix
-6. Deployment
-Deploy the trained model using Streamlit.
+**Dataset:** Insurance Claim Fraud Detection
 
-🚀 Application Features
-✅ Predict Insurance Fraud
+**Source:** [Kaggle – Insurance Claim Fraud Detection](https://www.kaggle.com/datasets/roshansharma/insurance-claim-fraud-detection)
 
-✅ Fraud Probability Score
+The dataset contains insurance claim information, including customer details, policy details, incident information, and claim amounts.
 
-✅ Real-Time Predictions
+### Important Features
 
-✅ User-Friendly Interface
+- Customer Age
+- Policy Number
+- Policy Annual Premium
+- Incident Type
+- Incident Severity
+- Vehicle Age
+- Vehicle Information
+- Total Claim Amount
+- Witness Count
+- Police Report Availability
+- Property Damage
 
-✅ Risk Assessment Recommendations
+### Target Variable
 
-💻 Streamlit Application
-Users can enter:
+`Fraud Reported`
 
-Customer Age
-Claim Amount
-Vehicle Age
-Incident Severity
-Witness Count
-Police Report Status
-The application predicts:
+- **Y** – Fraudulent Claim
+- **N** – Genuine Claim
 
-Fraud Risk: High / Medium / Low
+## 🛠️ Technologies & Tools Used
 
-Fraud Probability: XX%
-📈 Business Benefits
-Detect suspicious claims earlier
-Reduce fraudulent payouts
-Improve investigation efficiency
-Save operational costs
-Minimize financial losses
-📷 Sample Output
-Fraud Probability : 87%
+| Technology | Purpose |
+|---|---|
+| Python | Programming |
+| Pandas | Data manipulation |
+| NumPy | Numerical operations |
+| Matplotlib | Data visualization |
+| Seaborn | Statistical visualization |
+| Scikit-learn | Machine Learning |
+| XGBoost | Gradient boosting |
+| Streamlit | Web application |
+| Pickle | Model serialization |
 
-Risk Level : HIGH
+## 🔄 Project Workflow
 
-Recommendation :
-Manual Investigation Required
-📁 Project Structure
+### 1. Data Collection
+- Imported the insurance claim dataset.
+- Explored dataset structure and feature information.
+
+### 2. Data Preprocessing
+- Checked and handled missing values.
+- Removed duplicate records.
+- Encoded categorical variables.
+- Prepared features for model training.
+
+### 3. Exploratory Data Analysis (EDA)
+- Analyzed fraudulent and genuine claim distributions.
+- Studied claim amounts and incident severity.
+- Explored relationships between customer, policy, and incident features.
+- Identified important patterns associated with fraudulent claims.
+
+### 4. Model Building
+
+Implemented and compared the following classification algorithms:
+
+- Logistic Regression
+- Random Forest Classifier
+- XGBoost Classifier
+
+### 5. Model Evaluation
+
+Evaluated model performance using:
+
+- Accuracy
+- Precision
+- Recall
+- F1-Score
+- Confusion Matrix
+
+Recall and F1-score are particularly important because identifying fraudulent claims while minimizing missed fraud cases is a key objective.
+
+### 6. Model Deployment
+
+Developed an interactive Streamlit application that allows users to enter insurance claim information and receive fraud predictions.
+
+## 🚀 Application Features
+
+- Insurance Claim Fraud Prediction
+- Fraud Probability Score
+- Real-Time Prediction
+- High, Medium, and Low Risk Classification
+- Interactive User Interface
+- Investigation Recommendations
+
+## 💻 Streamlit Application
+
+Users can enter claim-related details such as:
+
+- Customer Age
+- Claim Amount
+- Vehicle Age
+- Incident Severity
+- Witness Count
+- Police Report Status
+
+The application generates a prediction containing:
+
+**Sample Output:**
+
+```text
+Fraud Probability: 87%
+
+Risk Level: HIGH
+
+Prediction: Potentially Fraudulent
+
+Recommendation: Manual Investigation Required
+```
+
+*Sample output for illustration only.*
+
+## 📁 Project Structure
+
+```text
 Insurance-Fraud-Detection/
 │
 ├── dataset/
@@ -128,11 +161,35 @@ Insurance-Fraud-Detection/
 ├── requirements.txt
 │
 └── README.md
-Future Enhancements
-SHAP Explainability
-Fraud Analytics Dashboard
-Document Verification Module
-Multiple Model Comparison
-Cloud Deployment
-Conclusion
-This project demonstrates the application of Machine Learning for fraud detection in the insurance industry. By automating fraud identification, insurance companies can reduce risks, improve operational efficiency, and make data-driven claim investigation decisions.
+```
+
+## 📈 Business Benefits
+
+- Helps identify suspicious insurance claims.
+- Reduces the possibility of fraudulent payouts.
+- Saves time in claim investigation.
+- Improves operational efficiency.
+- Supports data-driven decision-making.
+- Helps prioritize high-risk insurance claims.
+
+## 🔮 Future Enhancements
+
+- Implement SHAP for model explainability.
+- Develop an interactive fraud analytics dashboard.
+- Add document verification functionality.
+- Improve model performance through hyperparameter tuning.
+- Deploy the application on a cloud platform.
+
+## 🏁 Conclusion
+
+The Insurance Claim Fraud Detection System demonstrates how Machine Learning can be applied to solve a real-world problem in the insurance industry.
+
+By analyzing claim information and predicting potentially fraudulent activities, this system can help insurance companies improve fraud investigation, reduce financial risks, and make more informed decisions.
+
+---
+
+**Project Domain:** Machine Learning | Data Science | Insurance Analytics
+
+**Project Type:** Binary Classification
+
+**Application:** Streamlit Web Application
