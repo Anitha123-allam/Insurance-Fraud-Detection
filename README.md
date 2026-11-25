@@ -46,4 +46,107 @@ The dataset used in this project is collected from Kaggle and contains insurance
 
 **Target Variable:** Fraud Reported
 
+- **Y:** Fraudulent Claim
+- **N:** Genuine Claim
 
+## 5. Data Preprocessing
+
+The following data preprocessing techniques are performed:
+
+- Checked and handled missing values.
+- Identified duplicate records.
+- Encoded categorical variables into numerical values.
+- Performed feature selection.
+- Separated independent and dependent variables.
+- Split the dataset into training and testing sets.
+- Applied feature scaling where required.
+
+## 6. Exploratory Data Analysis (EDA)
+
+Performed Exploratory Data Analysis to understand the dataset and identify patterns related to insurance fraud.
+
+- Analyzed fraudulent and genuine claim distributions.
+- Examined claim amount distributions.
+- Analyzed incident types and incident severity.
+- Studied relationships between different features.
+- Performed correlation analysis.
+- Created visualizations using Matplotlib and Seaborn.
+
+## 7. Machine Learning Models
+
+Implemented the following classification algorithms:
+
+- **Logistic Regression:** Used as a baseline classification model.
+- **Random Forest Classifier:** Used multiple decision trees to classify insurance claims.
+- **XGBoost Classifier:** Applied gradient boosting for fraud classification.
+
+The models are compared using different evaluation metrics to identify the most suitable model.
+
+## 8. Model Evaluation
+
+Evaluated model performance using the following metrics:
+
+- Accuracy
+- Precision
+- Recall
+- F1-Score
+- Confusion Matrix
+
+Recall and F1-score are particularly important for identifying fraudulent claims and reducing missed fraud cases.
+
+## 9. Streamlit Web Application
+
+Developed an interactive web application using Streamlit to predict potentially fraudulent insurance claims.
+
+**Application Features:**
+
+- Enter insurance claim details.
+- Predict fraudulent or genuine claims.
+- Display fraud probability.
+- Classify claims into High, Medium, and Low risk levels.
+- Provide investigation recommendations.
+- Generate real-time predictions.
+
+**Sample Output:**
+
+```text
+Fraud Probability : 87%
+
+Risk Level : HIGH
+
+Recommendation : Manual Investigation Required
+```
+
+## 10. Business Benefits
+
+- Helps identify suspicious insurance claims.
+- Reduces the risk of fraudulent payouts.
+- Improves claim investigation efficiency.
+- Saves operational time and costs.
+- Supports data-driven decision-making.
+- Helps insurance companies prioritize suspicious claims.
+
+## 11. Future Enhancements
+
+- Implement SHAP for model explainability.
+- Develop an interactive fraud analytics dashboard.
+- Add document verification functionality.
+- Perform hyperparameter tuning.
+- Improve model performance.
+- Deploy the application on a cloud platform.
+
+## 12. Conclusion
+
+This project demonstrates the application of Machine Learning in solving real-world insurance fraud detection problems.
+
+By analyzing insurance claim information and identifying potentially fraudulent activities, the system helps insurance companies improve investigation efficiency, reduce financial risks, and make better data-driven decisions.
+
+---
+
+**Project Domain:** Data Science and Machine Learning
+
+**Project Type:** Binary Classification
+
+**Algorithms:** Logistic Regression, Random Forest, XGBoost
+
+**Deployment:** Streamlit Web Application
